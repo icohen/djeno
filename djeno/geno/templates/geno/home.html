@@ -1,8 +1,16 @@
 {% extends "geno/base.html" %}
 {% block title %}Djeno!{% endblock %}
+{% block head_css %}
+<link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}/style.css"/>
+{% endblock %}
 {% block head_js %}
 <script type="text/javascript" src="{{ STATIC_URL }}/main.js"></script>
 {% endblock %}
 {% block body %}
-<h1>Welcome home!</h1>
+<ul>
+    {% for person in people %}
+    <li>{{ person.name }}</li>
+    {% endfor %}
+</ul>
+<canvas></canvas>
 {% endblock %}

@@ -3,89 +3,111 @@
     "pk": 1, 
     "model": "geno.person", 
     "fields": {
-      "father": null, 
-      "name": "sue", 
-      "mother": null
+      "parents": [
+        3
+      ], 
+      "name": "sue"
     }
   }, 
   {
     "pk": 2, 
     "model": "geno.person", 
     "fields": {
-      "father": null, 
-      "name": "al", 
-      "mother": null
+      "parents": [
+        3
+      ], 
+      "name": "al"
     }
   }, 
   {
     "pk": 3, 
     "model": "geno.person", 
     "fields": {
-      "father": 2, 
-      "name": "heather", 
-      "mother": 1
+      "parents": [
+        1, 
+        2
+      ], 
+      "name": "heather"
     }
   }, 
   {
     "pk": 4, 
     "model": "geno.person", 
     "fields": {
-      "father": 6, 
-      "name": "ian", 
-      "mother": 5
+      "parents": [
+        6
+      ], 
+      "name": "ron"
     }
   }, 
   {
     "pk": 5, 
     "model": "geno.person", 
     "fields": {
-      "father": null, 
-      "name": "ann", 
-      "mother": null
+      "parents": [
+        6
+      ], 
+      "name": "ann"
     }
   }, 
   {
     "pk": 6, 
     "model": "geno.person", 
     "fields": {
-      "father": null, 
-      "name": "ron", 
-      "mother": null
+      "parents": [
+        4, 
+        5
+      ], 
+      "name": "ian"
     }
   }, 
   {
     "pk": 1, 
     "model": "geno.event", 
     "fields": {
-      "date": "2011-12-10"
+      "date": "1986-01-01"
     }
   }, 
   {
     "pk": 2, 
     "model": "geno.event", 
     "fields": {
-      "date": "1984-12-25"
+      "date": "1984-01-01"
     }
   }, 
   {
     "pk": 3, 
     "model": "geno.event", 
     "fields": {
-      "date": "1986-06-26"
+      "date": "1950-01-01"
     }
   }, 
   {
     "pk": 4, 
     "model": "geno.event", 
     "fields": {
-      "date": "1970-12-30"
+      "date": "1949-01-01"
     }
   }, 
   {
     "pk": 5, 
     "model": "geno.event", 
     "fields": {
-      "date": "1965-05-31"
+      "date": "1950-01-01"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "geno.event", 
+    "fields": {
+      "date": "1951-01-01"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "geno.birth", 
+    "fields": {
+      "baby": 6
     }
   }, 
   {
@@ -99,84 +121,28 @@
     "pk": 3, 
     "model": "geno.birth", 
     "fields": {
+      "baby": 5
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "geno.birth", 
+    "fields": {
       "baby": 4
     }
   }, 
   {
-    "pk": 1, 
-    "model": "geno.spouse", 
-    "fields": {
-      "person": 3, 
-      "marriage": 1
-    }
-  }, 
-  {
-    "pk": 2, 
-    "model": "geno.spouse", 
-    "fields": {
-      "person": 4, 
-      "marriage": 1
-    }
-  }, 
-  {
-    "pk": 3, 
-    "model": "geno.spouse", 
-    "fields": {
-      "person": 2, 
-      "marriage": 4
-    }
-  }, 
-  {
-    "pk": 4, 
-    "model": "geno.spouse", 
-    "fields": {
-      "person": 1, 
-      "marriage": 4
-    }
-  }, 
-  {
     "pk": 5, 
-    "model": "geno.spouse", 
+    "model": "geno.birth", 
     "fields": {
-      "person": 5, 
-      "marriage": 5
+      "baby": 2
     }
   }, 
   {
     "pk": 6, 
-    "model": "geno.spouse", 
+    "model": "geno.birth", 
     "fields": {
-      "person": 6, 
-      "marriage": 5
-    }
-  }, 
-  {
-    "pk": 7, 
-    "model": "geno.spouse", 
-    "fields": {
-      "person": 5, 
-      "marriage": 5
-    }
-  }, 
-  {
-    "pk": 1, 
-    "model": "geno.marriage", 
-    "fields": {
-      "end_date": null
-    }
-  }, 
-  {
-    "pk": 4, 
-    "model": "geno.marriage", 
-    "fields": {
-      "end_date": null
-    }
-  }, 
-  {
-    "pk": 5, 
-    "model": "geno.marriage", 
-    "fields": {
-      "end_date": null
+      "baby": 1
     }
   }
 ]
