@@ -1,0 +1,182 @@
+[
+  {
+    "pk": 1, 
+    "model": "geno.person", 
+    "fields": {
+      "father": null, 
+      "name": "sue", 
+      "mother": null
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "geno.person", 
+    "fields": {
+      "father": null, 
+      "name": "al", 
+      "mother": null
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "geno.person", 
+    "fields": {
+      "father": 2, 
+      "name": "heather", 
+      "mother": 1
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "geno.person", 
+    "fields": {
+      "father": 6, 
+      "name": "ian", 
+      "mother": 5
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "geno.person", 
+    "fields": {
+      "father": null, 
+      "name": "ann", 
+      "mother": null
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "geno.person", 
+    "fields": {
+      "father": null, 
+      "name": "ron", 
+      "mother": null
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "geno.event", 
+    "fields": {
+      "date": "2011-12-10"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "geno.event", 
+    "fields": {
+      "date": "1984-12-25"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "geno.event", 
+    "fields": {
+      "date": "1986-06-26"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "geno.event", 
+    "fields": {
+      "date": "1970-12-30"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "geno.event", 
+    "fields": {
+      "date": "1965-05-31"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "geno.birth", 
+    "fields": {
+      "baby": 3
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "geno.birth", 
+    "fields": {
+      "baby": 4
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "geno.spouse", 
+    "fields": {
+      "person": 3, 
+      "marriage": 1
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "geno.spouse", 
+    "fields": {
+      "person": 4, 
+      "marriage": 1
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "geno.spouse", 
+    "fields": {
+      "person": 2, 
+      "marriage": 4
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "geno.spouse", 
+    "fields": {
+      "person": 1, 
+      "marriage": 4
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "geno.spouse", 
+    "fields": {
+      "person": 5, 
+      "marriage": 5
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "geno.spouse", 
+    "fields": {
+      "person": 6, 
+      "marriage": 5
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "geno.spouse", 
+    "fields": {
+      "person": 5, 
+      "marriage": 5
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "geno.marriage", 
+    "fields": {
+      "end_date": null
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "geno.marriage", 
+    "fields": {
+      "end_date": null
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "geno.marriage", 
+    "fields": {
+      "end_date": null
+    }
+  }
+]

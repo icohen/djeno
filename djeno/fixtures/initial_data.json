@@ -1,0 +1,29 @@
+[
+  {
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "cohen", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": true, 
+      "is_staff": true, 
+      "last_login": "2012-03-04 09:02:30", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "sha1$be1b7$58a110973c46ed504ec7596c30541b654807dc30", 
+      "email": "i@c.com", 
+      "date_joined": "2012-03-04 09:00:02"
+    }
+  },
+  {
+    "pk": "617dfab0379e3d7a267038fd92740dcc", 
+    "model": "sessions.session", 
+    "fields": {
+      "expire_date": "2013-03-18 09:02:30", 
+      "session_data": "N2M4Y2Y5ZWFkMGNlZTIwNDljYjExYjk0YjI4YTZkOTM1MGQwODVlZTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n"
+    }
+  }
+
+]
