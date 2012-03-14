@@ -1,24 +1,16 @@
 from django.db import models
 
 class Person(models.Model):
-    name = models.CharField(max_length=64)
-    mother = models.ForeignKey('Mother', related_name='children', blank=True, null=True)
-    father = models.ForeignKey('Father', related_name='children', blank=True, null=True)
+    name    = models.CharField(max_length=64)
+    parents = models.ManyToManyField('self', 
+                                     related_name='children', 
+                                     blank=True, null=True)
     
     def __unicode__(self):
         return self.name
     
     class Meta:
         verbose_name_plural='People'
-
-class Mother(Person):
-    class Meta:
-        proxy = True
-
-class Father(Person):
-    class Meta:
-        proxy = True
-
 
 class Event(models.Model):
     date = models.DateField()
@@ -38,12 +30,12 @@ class Death(Event):
     def __unicode__(self):
         return 'Death of {0}'.format(self.deceased.name)
 
-class Spouse(models.Model):
+class MarriageRelation(models.Model):
     person = models.ForeignKey(Person)
     marriage = models.ForeignKey('Marriage')
 
 class Marriage(Event):
-    spouses = models.ManyToManyField(Person, through=Spouse)
+    spouses = models.ManyToManyField(Person, through=MarriageRelation)
     end_date = models.DateField(blank=True, null=True)
     
     @property

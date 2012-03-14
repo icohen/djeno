@@ -1,5 +1,5 @@
 from django.contrib import admin
-from geno import models
+from djeno.geno import models
 
 class OneToOneInline(admin.StackedInline):
     template = 'geno/admin/onetoonestacked.html'
@@ -17,33 +17,25 @@ class DeathInline(OneToOneInline):
 
 class MarriageInline(Inline):
     model = models.Marriage.spouses.through
-    # verbose names below are a hack otherwise these show up as Spouses instead of Marriages in the PersonAdmin
+    # verbose names below are a hack otherwise these show up as MarriageRelations instead of Marriages in the PersonAdmin
     verbose_name_plural = 'Marriages'
     verbose_name = 'Marriage'
     extra = 0
 
-class SpouseInline(Inline):
-    model = models.Spouse
+class MarriageRelationInline(Inline):
+    model = models.MarriageRelation
     extra = 2
 
 class PersonAdmin(admin.ModelAdmin):
     inlines = [BirthInline, DeathInline, MarriageInline]
 
-class MotherAdmin(PersonAdmin):
-    model = models.Mother
-
-class FatherAdmin(PersonAdmin):
-    model = models.Father
-
 class MarriageAdmin(admin.ModelAdmin):
     model = models.Marriage
-    inlines = [SpouseInline]
+    inlines = [MarriageRelationInline]
 
 
 
 admin.site.register(models.Person, PersonAdmin)
 admin.site.register(models.Marriage, MarriageAdmin)
-admin.site.register(models.Mother, MotherAdmin)
-admin.site.register(models.Father, FatherAdmin)
 
 
