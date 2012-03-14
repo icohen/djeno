@@ -4,7 +4,9 @@ Disclaimer: This is 100% my wife [@heathercolson](http://twitter.com/heathercols
 
 ### Prerequesities  
 -mysql with user root and blank password
+
 -mysql database named djeno
+
     (ugc)ugc $ mysql -uroot 
     Welcome to the MySQL monitor.  Commands end with ; or \g.
     Your MySQL connection id is 1291
@@ -12,9 +14,10 @@ Disclaimer: This is 100% my wife [@heathercolson](http://twitter.com/heathercols
     
     mysql> create database django_ugc;
     Query OK, 1 row affected (0.00 sec)
+
 -virtual env or clean python site packages on a fresh VM
 
-### Install Requirements (in a virtual env)
+### Install Requirements
     (djeno)djeno $ pip install -r requirements.txt 
 
 ### Create db, sync initial data, and run dev server
