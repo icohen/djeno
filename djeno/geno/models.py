@@ -4,7 +4,6 @@ class Person(models.Model):
     name = models.CharField(max_length=64)
     mother = models.ForeignKey('Mother', related_name='children', blank=True, null=True)
     father = models.ForeignKey('Father', related_name='children', blank=True, null=True)
-    siblings = models.ManyToManyField('self', )
     
     def __unicode__(self):
         return self.name
