@@ -1,4 +1,4 @@
-## Djeno - geneology in Django
+## Djeno - genealogy in Django
 
 Disclaimer: This is 100% my wife [@heathercolson](http://twitter.com/heathercolson)'s idea. Heather started this as her first Django project and I stole it to experiment and prove my Django prowess. 
 
