@@ -3,62 +3,56 @@
     "pk": 1, 
     "model": "geno.person", 
     "fields": {
-      "parents": [
+      "name": "sue", 
+      "children": [
         3
-      ], 
-      "name": "sue"
+      ]
     }
   }, 
   {
     "pk": 2, 
     "model": "geno.person", 
     "fields": {
-      "parents": [
+      "name": "al", 
+      "children": [
         3
-      ], 
-      "name": "al"
+      ]
     }
   }, 
   {
     "pk": 3, 
     "model": "geno.person", 
     "fields": {
-      "parents": [
-        1, 
-        2
-      ], 
-      "name": "heather"
+      "name": "heather", 
+      "children": []
     }
   }, 
   {
     "pk": 4, 
     "model": "geno.person", 
     "fields": {
-      "parents": [
+      "name": "ron", 
+      "children": [
         6
-      ], 
-      "name": "ron"
+      ]
     }
   }, 
   {
     "pk": 5, 
     "model": "geno.person", 
     "fields": {
-      "parents": [
+      "name": "ann", 
+      "children": [
         6
-      ], 
-      "name": "ann"
+      ]
     }
   }, 
   {
     "pk": 6, 
     "model": "geno.person", 
     "fields": {
-      "parents": [
-        4, 
-        5
-      ], 
-      "name": "ian"
+      "name": "ian", 
+      "children": []
     }
   }, 
   {

@@ -1,16 +1,75 @@
 {% extends "geno/base.html" %}
 {% block title %}Djeno!{% endblock %}
 {% block head_css %}
-<link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}/style.css"/>
+<link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}base.css"/>
+<link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}spacetree.css"/>
 {% endblock %}
 {% block head_js %}
-<script type="text/javascript" src="{{ STATIC_URL }}/main.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}spacetree.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}family_spacetree.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}home.js"></script>
+
 {% endblock %}
 {% block body %}
-<ul>
-    {% for person in people %}
-    <li>{{ person.name }}</li>
-    {% endfor %}
-</ul>
-<canvas></canvas>
+
+<div id="container">
+
+<div id="left-container">
+
+
+
+<div class="text">
+
+</div>
+
+<div id="id-list"></div>
+
+</div>
+
+<div id="center-container">
+    <div id="infovis"></div>    
+</div>
+
+<div id="right-container">
+
+<h4>Tree Orientation</h4>
+<table>
+    <tr>
+        <td>
+            <label for="r-left">Left </label>
+        </td>
+        <td>
+            <input type="radio" id="r-left" name="orientation" checked="checked" value="left" />
+        </td>
+    </tr>
+    <tr>
+         <td>
+            <label for="r-top">Top </label>
+         </td>
+         <td>
+            <input type="radio" id="r-top" name="orientation" value="top" />
+         </td>
+    </tr>
+    <tr>
+         <td>
+            <label for="r-bottom">Bottom </label>
+          </td>
+          <td>
+            <input type="radio" id="r-bottom" name="orientation" value="bottom" />
+          </td>
+    </tr>
+    <tr>
+          <td>
+            <label for="r-right">Right </label>
+          </td> 
+          <td> 
+           <input type="radio" id="r-right" name="orientation" value="right" />
+          </td>
+    </tr>
+</table>
+
+</div>
+
+<div id="log"></div>
+</div>
 {% endblock %}

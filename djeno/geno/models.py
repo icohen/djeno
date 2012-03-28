@@ -1,11 +1,12 @@
 from django.db import models
 
 class Person(models.Model):
-    name    = models.CharField(max_length=64)
-    parents = models.ManyToManyField('self', 
-                                     related_name='children', 
+    name     = models.CharField(max_length=64)
+    children = models.ManyToManyField('self', 
+                                     symmetrical=False,
+                                     related_name='parents',
                                      blank=True, null=True)
-    
+
     def __unicode__(self):
         return self.name
     
