@@ -44,7 +44,7 @@ class Marriage(Event):
         return self.date        
     
     def __unicode__(self):
-        spouse_names_list = self.spouses.values('name', flat=True)
+        spouse_names_list = self.spouses.values_list('name', flat=True)
         formatted_spouses = ' and '.join(spouse_names_list)
         return 'Marriage between {0}'.format(formatted_spouses)
     

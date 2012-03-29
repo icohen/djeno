@@ -98,6 +98,20 @@
     }
   }, 
   {
+    "pk": 7, 
+    "model": "geno.event", 
+    "fields": {
+      "date": "1970-01-01"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "geno.event", 
+    "fields": {
+      "date": "1970-01-01"
+    }
+  }, 
+  {
     "pk": 1, 
     "model": "geno.birth", 
     "fields": {
@@ -137,6 +151,52 @@
     "model": "geno.birth", 
     "fields": {
       "baby": 1
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "geno.marriagerelation", 
+    "fields": {
+      "person": 1, 
+      "marriage": 7
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "geno.marriagerelation", 
+    "fields": {
+      "person": 2, 
+      "marriage": 7
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "geno.marriagerelation", 
+    "fields": {
+      "person": 5, 
+      "marriage": 8
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "geno.marriagerelation", 
+    "fields": {
+      "person": 4, 
+      "marriage": 8
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "geno.marriage", 
+    "fields": {
+      "end_date": null
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "geno.marriage", 
+    "fields": {
+      "end_date": null
     }
   }
 ]
