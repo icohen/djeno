@@ -7,7 +7,7 @@ Disclaimer: This is 100% my wife [@heathercolson](http://twitter.com/heathercols
 -virtual env or clean python site packages on a fresh VM
 
 ### Install Requirements
-    (djeno)djeno $ pip install -r requirements.txt 
+    (djeno)djeno $ pip install -r requirements.pip 
 
 ### Create db, sync initial data, and run dev server
     (djeno)djeno $ bin/reset-db.sh 
