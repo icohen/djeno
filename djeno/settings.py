@@ -119,14 +119,12 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django_extensions',
-    # app
-    'djeno.registration',
-    'djeno.geno',
     # third party
     'registration',
     'tastypie',
-
-    
+    # app
+    'djeno.registration',
+    'djeno.geno',
 )
 
 # A sample logging configuration. The only tangible logging
