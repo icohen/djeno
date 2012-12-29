@@ -131,8 +131,7 @@ def reload_app(arg=None):
         with cd(env.project_dir):
             _ve_run(env.project, "pip install -r requirements.pip")
             _ve_run(env.project, "python manage.py syncdb --noinput")
-           # _ve_run(env.project, "python manage.py collectstatic")
-
+            _ve_run(env.project, "python manage.py collectstatic --noinput")
     restart_app()
 
 
@@ -140,8 +139,8 @@ def restart_app():
     """Restarts the app using supervisorctl"""
 
     with cd(env.supervisor_dir):
-        _ve_run('supervisor','supervisorctl reread && supervisorctl reload')
-        _ve_run('supervisor','supervisorctl restart %s' % env.project)
+        _ve_run('supervisor','supervisorctl stop %s' % env.project)
+        _ve_run('supervisor','supervisorctl start %s' % env.project)
 
 ### Helper functions
 

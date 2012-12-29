@@ -1,8 +1,10 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404, render_to_response
 from django.template import RequestContext
 
 from . import models
 
+@login_required
 def home(request):
     people = models.Person.objects.order_by('birth__date')
     return render_to_response('geno/home.html', 
