@@ -1,8 +1,9 @@
--e git://github.com/django/django.git#egg=Django
-MySQL-python==1.2.3
-distribute==0.6.24
-django-extensions==0.8
-virtualenvwrapper==2.11.1
-wsgiref==0.1.2
-django-tastypie==0.9.11
-gunicorn==0.13.4
+virtualenv>=1.8.4
+virtualenvwrapper>=3.6
+wsgiref>=0.1.2
+gunicorn>=0.17.0
+
+-e git://github.com/django/django.git#egg=django
+-e git://github.com/toastdriven/django-tastypie.git#egg=django-tastypie
+-e git://github.com/django-extensions/django-extensions.git#egg=django-extensions
+-e hg+https://bitbucket.org/ubernostrum/django-registration#egg=registration

@@ -119,8 +119,14 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django_extensions',
+    # app
+    'djeno.registration',
     'djeno.geno',
+    # third party
+    'registration',
     'tastypie',
+
+    
 )
 
 # A sample logging configuration. The only tangible logging
@@ -131,9 +137,15 @@ INSTALLED_APPS = (
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
+    'filters': {
+         'require_debug_false': {
+             '()': 'django.utils.log.RequireDebugFalse'
+         }
+     },
     'handlers': {
         'mail_admins': {
             'level': 'ERROR',
+            'filters': ['require_debug_false'],
             'class': 'django.utils.log.AdminEmailHandler'
         }
     },
@@ -145,6 +157,12 @@ LOGGING = {
         },
     }
 }
+
+# Third Party app settings
+
+# django-registration
+REGISTRATION_OPEN = False
+ACCOUNT_ACTIVATION_DAYS = 7
 
 try:
     from local_settings import *

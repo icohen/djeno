@@ -129,7 +129,7 @@ def reload_app(arg=None):
 
     if arg <> "quick":
         with cd(env.project_dir):
-            _ve_run(env.project, "pip install -r requirements.pip")
+            _ve_run(env.project, "pip install --upgrade -r requirements.pip")
             _ve_run(env.project, "python manage.py syncdb --noinput")
             _ve_run(env.project, "python manage.py collectstatic --noinput")
     restart_app()
