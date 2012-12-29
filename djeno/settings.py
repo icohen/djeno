@@ -158,6 +158,14 @@ LOGGING = {
     }
 }
 
+LOGIN_URL = 'django.contrib.auth.views.login'
+
+
+LOGOUT_URL = 'django.contrib.auth.views.logout'
+
+LOGIN_REDIRECT_URL = 'geno.home'
+
+
 # Third Party app settings
 
 # django-registration
