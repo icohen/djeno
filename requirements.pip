@@ -3,7 +3,7 @@ virtualenvwrapper>=3.6
 wsgiref>=0.1.2
 gunicorn>=0.17.0
 
--e git://github.com/django/django.git#egg=django
+-e git://github.com/django/django.git@13a2b11425f87f674f0273af5fa70c1e4cf327ed#egg=Django-dev
 -e git://github.com/toastdriven/django-tastypie.git#egg=django-tastypie
 -e git://github.com/django-extensions/django-extensions.git#egg=django-extensions
 -e hg+https://bitbucket.org/ubernostrum/django-registration#egg=registration
