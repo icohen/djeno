@@ -123,7 +123,7 @@ INSTALLED_APPS = (
     'registration',
     'tastypie',
     # app
-    'djeno.registration',
+    'djeno.djeno_registration',
     'djeno.geno',
 )
 
