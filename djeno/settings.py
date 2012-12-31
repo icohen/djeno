@@ -101,9 +101,6 @@ ROOT_URLCONF = 'djeno.urls'
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'djeno.wsgi.application'
 
-
-TEMPLATE_DIRS = ()
-
 FIXTURE_DIRS = (
    os.path.join(PROJECT_ROOT, 'fixtures'),
 )
