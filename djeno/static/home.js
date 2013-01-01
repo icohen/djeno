@@ -3,11 +3,8 @@ $(function(){
 });
 
 function init(){
-    $.ajax({'url':'/api/v1/person',
-            'async': false
-           })
-           .done(function ( data ){
-               var familyTree = data.objects;
-               initFamilyTree( familyTree );
-            });
+    $.get('/api/v1/person', function ( data ){
+       var familyTree = data.objects;
+       initFamilyTree( familyTree );
+    });
 };
